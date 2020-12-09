@@ -1,6 +1,8 @@
+import { link } from 'fs';
 import React from 'react';
 
 function Nav() {
+
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -17,7 +19,10 @@ function Nav() {
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="/contact">Contact</a>
-            </li>
+                </li>
+                <li className="nav-item">
+                    <a>Resume</a>
+                </li>
             </ul>
         </div>
         </nav>

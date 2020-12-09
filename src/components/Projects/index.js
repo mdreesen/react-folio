@@ -3,6 +3,7 @@ import SmollTalkImage from '../../assets/project-images/smollTalk.png';
 import EcommBackendImage from '../../assets/project-images/backendEcomm.png';
 import BloggerImage from '../../assets/project-images/blogger.png';
 import SocialNetworkImage from '../../assets/project-images/socialNetworkBackend.png';
+import ReadMeImage from '../../assets/project-images/readmeGen.png';
 
 function Projects() {
 
@@ -34,10 +35,17 @@ function Projects() {
       techUsed: "Tech used: Mongoose, MongoDB, Express.Js, Moment.Js."
     }
 
+    const aboutReadMeGen = {
+      name: "README Generator",
+      description: "This readMe-gen project is to make users a readMe with easy steps to follow so that their README.md looks professional and clean.",
+      About: "This README Generator asks the user questions about their project. This is used with Node.Js through the terminal.",
+      techUsed: "Javascript, Inquirer, fs."
+    }
+
     return(
         <section>
         <div className="projectContainer">
-         <h2>Projects</h2>
+         <h2 className="projectTitle">Projects</h2>
         </div>
             <div className="card bg-dark text-white">
                 <img className="card-img" src={SmollTalkImage} alt="Card image" />
@@ -171,6 +179,40 @@ function Projects() {
               <div className="modal-footer">
                 <a href="https://github.com/mdreesen/social_network_backend" className="btn btn-info" role="button">Github</a>
                 <a href="https://drive.google.com/file/d/1BSpR2uUyg2ozcEFSfSj6GeIwh0Z-6C19/view" className="btn btn-info" role="button">Video Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card bg-dark text-white">
+                <img className="card-img" src={ReadMeImage} alt="Card imageTwo" />
+                    <div className="card-img-overlay">
+                     <div className="card-top">
+                        <h5 className="card-title">{aboutReadMeGen.name}</h5>
+                     </div>
+                        <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#aboutReadMeGen">Click to see details</button>
+                    </div>
+                </div>
+                <div>
+                
+        <div className="modal fade" id="aboutReadMeGen" tabIndex={-1} role="dialog" aria-labelledby="aboutReadMeGen" aria-hidden="true">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="aboutReadMeGen">{aboutReadMeGen.name}</h5>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <p>{aboutReadMeGen.description}</p>
+                <p>{aboutReadMeGen.about}</p>
+                <p>{aboutReadMeGen.techUsed}</p>
+              </div>
+              <div className="modal-footer">
+                <a href="https://github.com/mdreesen/readme-gen" className="btn btn-info" role="button">Github</a>
+                <a href="https://drive.google.com/file/d/1Uw3jb4EZVfyN5Xb4YTNhDpcaN0uNEzQ4/edit" className="btn btn-info" role="button">Video Preview</a>
               </div>
             </div>
           </div>

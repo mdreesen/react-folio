@@ -3,10 +3,12 @@
   padding: 0;
 }
 
-navbar {
+.navbar {
   font-family: "Montserrat", Georgia, 'Times New Roman', Times, serif;
-  border-radius: 0;
-  margin-bottom: 0;
+  position: relative;
+  min-height: 50px;
+  border: 1px solid transparent;
+  margin-bottom: none;
 }
 
 style {
@@ -96,6 +98,10 @@ body {
   font-size: 4.5rem;
 }
 
+.modal-body {
+  border: none;
+}
+
 /* card image overlay */
 .card-img {
   opacity: 0.2;
@@ -103,4 +109,11 @@ body {
 
 .card-text {
   font-size: 1rem;
+}
+
+/* Project title */
+.projectTitle {
+  font-size: 50px;
+  font-weight: 700;
+  padding: 20px;
 }
