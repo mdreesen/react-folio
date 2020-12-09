@@ -3,8 +3,10 @@
   padding: 0;
 }
 
-nav {
+navbar {
   font-family: "Montserrat", Georgia, 'Times New Roman', Times, serif;
+  border-radius: 0;
+  margin-bottom: 0;
 }
 
 style {
@@ -91,7 +93,7 @@ body {
 }
 
 .card-title {
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 /* card image overlay */
