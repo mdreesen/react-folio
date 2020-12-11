@@ -46,29 +46,37 @@ function Contact() {
     }
 
     return(
-        <section>
+        <section className="contact-section">
         <div className="contact-card card" style={{width: '35rem'}}>
             <div className="card-body">
                 <h5 className="card-title">Contact Me</h5>
                 <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name</label>
+                </div>
+                <div>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange}></input>
                 </div>
+                <br></br>
                 <div>
                     <label htmlFor="email">Email</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange}></input>
                 </div>
                 <div>
+                    <input type="email" name="email" defaultValue={email} onBlur={handleChange}></input>
+                </div>
+                <br></br>
+                <div>
                     <label htmlFor="message">Message</label>
+                </div>
+                <div>
                     <textarea name="message" defaultValue={message} rows="5" onBlur={handleChange}></textarea>
                     {errorMessage && (
                         <div>
                             <p className="error-text">{errorMessage}</p>
-                        </div>
+                </div>
                     )}
                 </div>
-                <button type="submit">Submit</button>
+                <button className="submit-btn" type="submit">Submit</button>
             </form>
             </div>
         </div>
