@@ -14,10 +14,6 @@ import Footer from './components/Footer'
 
 function App() {
 
-  // <About></About>
-  // <Projects></Projects>
-  // <Contact></Contact>
-
   return (
     <div>
     <Nav></Nav>

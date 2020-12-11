@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "SmollTalk",
+        "image": "./assets/project-images/smollTalk.png",
+        "description": "This site is a CMS-style chat site similar to a Wordpress site, where communities can post and comment on other friends’ posts.",
+        "about": "This project was a group project where we utilized different technology to complete this application.",
+        "techUsed": "Tech used: Express.js, MySql, Handlebars.js, bootstrap, CSS, HTML, Cypress (Testing), JavaScript."
+    }
+]

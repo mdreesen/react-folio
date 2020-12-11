@@ -47,8 +47,10 @@ function Contact() {
 
     return(
         <section>
-            <h1>Contact Me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
+        <div className="contact-card card" style={{width: '35rem'}}>
+            <div className="card-body">
+                <h5 className="card-title">Contact Me</h5>
+                <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange}></input>
@@ -68,6 +70,8 @@ function Contact() {
                 </div>
                 <button type="submit">Submit</button>
             </form>
+            </div>
+        </div>
         </section>
     );
 }

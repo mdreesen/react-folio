@@ -9,6 +9,8 @@
   min-height: 50px;
   border: 1px solid transparent;
   margin-bottom: none;
+  margin: inherit;
+  border-radius: inherit;
 }
 
 style {
@@ -116,4 +118,10 @@ body {
   font-size: 50px;
   font-weight: 700;
   padding: 20px;
+}
+
+.contact-card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
 }
