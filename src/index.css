@@ -43,6 +43,7 @@ style {
   z-index: -2;
   border-block-color: black;
   border: solid 3px;
+  height: 400px;
   border-radius: 50%;
 }
 

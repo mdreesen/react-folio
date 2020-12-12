@@ -1,12 +1,13 @@
 import React from 'react';
 import mePhoto from '../../assets/me-image/IMG_7691.JPG'
+import mePhotoTwo from '../../assets/me-image/meImage.JPG';
 
 function About() {
     return (
         <section>
             <div className="hero">
                 <div className="img-about">
-                    <img src={mePhoto} alt="" width={180} height={350} className="me-img" />
+                    <img src={mePhotoTwo} alt="Michael's Face Image" className="me-img" />
                     <div className="about-p">
                     Michael Dreesen started off in being a Quality Assurance analyst for web and backend projects and worked in QA for 4 years.
                     <br></br>
