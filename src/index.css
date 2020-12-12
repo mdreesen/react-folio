@@ -125,6 +125,7 @@ body {
     margin-bottom: 10px; /* Added */
     background: transparent;
     color: white;
+    border: none;
 }
 
 .contact-section {
@@ -139,6 +140,14 @@ body {
   z-index: 9999;
 }
 
+input, select, textarea{
+  color: #3E3B3B;
+}
+
+textarea:focus, input:focus {
+  color: #3E3B3B;
+}
+
 .error-text {
   color: white;
 }
@@ -147,4 +156,11 @@ body {
   background: transparent;
   border: none;
   cursor:pointer
+}
+
+/* Footer */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }

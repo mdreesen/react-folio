@@ -1,5 +1,11 @@
 import React from 'react';
 
+const icon = {
+  gitHub: "https://github.com/mdreesen",
+  linkedIn: "https://www.linkedin.com/in/mdreesen/",
+  pinterest: "https://www.pinterest.com/michaeldreesen90/"
+}
+
 function Footer() {
     return (
 <footer className="page-footer font-small bg-dark">
@@ -9,30 +15,18 @@ function Footer() {
     <div className="row">
       {/* Grid column */}
       <div className="col-md-12 py-5">
-        <div className="mb-5 flex-center">
-          {/* Facebook */}
-          <a className="fb-ic">
-            <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          {/* Twitter */}
-          <a className="tw-ic">
-            <i className="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          {/* Google +*/}
-          <a className="gplus-ic">
-            <i className="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        <div className="icon-container mb-5 flex-center">
+          {/* Github */}
+          <a className="fb-ic" href={icon.gitHub}>
+          <i className="fab fa-github fa-4x" />
           </a>
           {/*Linkedin */}
-          <a className="li-ic">
-            <i className="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          {/*Instagram*/}
-          <a className="ins-ic">
-            <i className="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          <a className="li-ic" href={icon.linkedIn}>
+            <i className="fab fa-linkedin-in fa-4x" />
           </a>
           {/*Pinterest*/}
-          <a className="pin-ic">
-            <i className="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          <a className="pin-ic" href={icon.pinterest}>
+            <i className="fab fa-pinterest fa-4x" />
           </a>
         </div>
       </div>
@@ -40,12 +34,6 @@ function Footer() {
     </div>
     {/* Grid row*/}
   </div>
-  {/* Footer Elements */}
-  {/* Copyright */}
-  <div className="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-  </div>
-  {/* Copyright */}
 </footer>
     );
 }
