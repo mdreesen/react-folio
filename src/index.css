@@ -39,16 +39,15 @@ style {
 
 .me-img {
   margin: 35px 25px;
-  padding: 10px;
   z-index: -2;
-  border-block-color: black;
-  border: solid 3px;
-  height: 400px;
+  height: 200px;
   border-radius: 50%;
 }
 
 .about-p {
   padding: 50px 15px;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 .about-me {
@@ -137,7 +136,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 15%;
+  padding: 18%;
   z-index: 9999;
 }
 
@@ -156,7 +155,9 @@ textarea:focus, input:focus {
 .submit-btn {
   background: transparent;
   border: none;
-  cursor:pointer
+  cursor:pointer;
+  font-size: 20px;
+  color: white;
 }
 
 /* Footer */
