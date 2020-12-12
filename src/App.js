@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 
-// importing email.js
-import{ init } from 'emailjs-com';
-init("user_5PifaWCGrPQuL7ghKo7R5");
-
 // Importing browser router to render the pages easier
-import { Route, Link} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 // Components list
 import Nav from './components/Nav';
