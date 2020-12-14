@@ -1,4 +1,4 @@
-# React Portfololio
+# React Portfolio
 
 ## Description
 This is a react frontend portfolio. Only focusing on the frontend of React. No backend implemented.
