@@ -1,5 +1,5 @@
-import { link } from 'fs';
 import React from 'react';
+import resume from '../../assets/resume/resume.pdf'
 
 function Nav() {
 
@@ -21,7 +21,7 @@ function Nav() {
                     <a className="nav-link" href="/contact">Contact</a>
                 </li>
                 <li className="nav-item">
-                    <a>Resume</a>
+                    <a className="nav-link" href={resume} download>Click to download Michael's resume</a>
                 </li>
             </ul>
         </div>
